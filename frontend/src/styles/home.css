@@ -163,6 +163,70 @@
   opacity: 0.88;
 }
 
+.btn-ai {
+  background: linear-gradient(135deg, var(--accent), #7c3aed);
+}
+
+.btn-ai:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.agent-preview-label {
+  font-size: 13px;
+  color: var(--text);
+  margin: 0 0 10px;
+}
+
+.agent-preview-content {
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
+  border-radius: 8px;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.agent-preview-content strong {
+  color: var(--text-h);
+  font-size: 15px;
+}
+
+.agent-preview-content p {
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.agent-preview-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.agent-preview-actions .btn-primary {
+  flex: 1;
+}
+
+.btn-cancel {
+  flex: 1;
+  padding: 11px 14px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text);
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.btn-cancel:hover {
+  border-color: var(--text);
+  color: var(--text-h);
+}
+
 @media (max-width: 600px) {
   .home-container {
     padding: 24px 16px 48px;
